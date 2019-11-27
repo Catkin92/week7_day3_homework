@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div class="title">
     <h1>Countries</h1>
-      <countries-list :countries="countries"></countries-list>
-      <country-detail :country="selectedCountry"></country-detail>
+      <div class="main-container">
+        <countries-list :countries="countries"></countries-list>
+        <country-detail :country="selectedCountry"></country-detail>
+      </div>
   </div>
 </template>
 
@@ -36,9 +38,12 @@ export default {
 </script>
 
 <style>
-
+.title {
+  font-family: monospace;
+}
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+  }
 </style>
-
-<!-- CountriesList
-ListComponent
-CountryDetail -->
