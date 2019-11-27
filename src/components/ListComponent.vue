@@ -12,7 +12,7 @@ export default {
     handleClick(){
       eventBus.$emit('country-selected', this.country)
     }
-  }
+  },
 }
 </script>
 
