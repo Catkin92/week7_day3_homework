@@ -1,6 +1,8 @@
 <template>
   <div>
-    <list-component v-for="(country, index) in countries" :country="country" :key="index"></list-component>
+    <ul>
+      <list-component v-for="(country, index) in countries" :country="country" :key="index"></list-component>
+    </ul>
   </div>
 </template>
 
